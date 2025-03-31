@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
 import { Cpu, Activity, Link, ArrowRight, MousePointer } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -139,7 +140,7 @@ export default function Home() {
                 </div>
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
                   <div className="aspect-video bg-gray-100 rounded-lg">
-                    <img src="/configure.png" alt="Configure API" className="object-cover rounded-lg"/>
+                    <Image src="/configure.png" alt="Configure API" className="object-cover rounded-lg" width={306} height={390}/>
                   </div>
                 </div>
               </div>
@@ -149,12 +150,12 @@ export default function Home() {
                   <span className="inline-block text-6xl font-bold text-purple-600/20 mb-4">02</span>
                   <h3 className="text-3xl font-semibold mb-6">Generate</h3>
                   <p className="text-gray-600 text-lg">
-                    Click "Generate Mock API" to create your mock API instantly and receive a unique endpoint.
+                    Click &ldquo;Generate Mock API&rdquo; to create your mock API instantly and receive a unique endpoint.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
                   <div className="aspect-video bg-gray-100 rounded-lg">
-                    <img src="/generate.png" alt="Configure API" className="object-cover rounded-lg" />
+                    <Image src="/generate.png" alt="Generate API" className="object-cover rounded-lg" width={306} height={390}/>
                   </div>
                 </div>
               </div>
@@ -169,7 +170,7 @@ export default function Home() {
                 </div>
                 <div className="bg-white p-8 rounded-2xl shadow-lg">
                   <div className="aspect-video bg-gray-100 rounded-lg">
-                    <img src="/preview.png" alt="Configure API" className="object-cover rounded-lg" />
+                    <Image src="/preview.png" alt="Test and Share API" className="object-cover rounded-lg" width={306} height={390}/>
                   </div>
                 </div>
               </div>
